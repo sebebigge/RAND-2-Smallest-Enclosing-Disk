@@ -436,7 +436,7 @@ Performs the TestDistribution function for all distributions and plots the resul
 """
 def TestMain(n: int, runs: int, nbN: int, seed: int | None = None) -> None:
     sample_distributions = ["uniform square", "uniform disc", "gaussian", "edge circle"]
-    output_dir = Path("Grafieken/N100000_RUNS1000_NBN25")
+    output_dir = Path("Graphs/N10000_RUNS1000_NBN25")
     output_dir.mkdir(parents=True, exist_ok=True)
     for distribution in sample_distributions:
         print(f"Testing distribution: {distribution}")
@@ -450,7 +450,7 @@ def TestMain(n: int, runs: int, nbN: int, seed: int | None = None) -> None:
 
 
 if __name__ == "__main__":
-    TestMain(100000, 1000, 25, seed=12345)
+    TestMain(10000, 1000, 25, seed=12345)
 
 
 """
